@@ -1,0 +1,136 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "password": "123456",
+      "role": "admin",
+      "clerkUserId": "vvv",
+      "email": "admin@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Manager",
+      "password": "123456",
+      "role": "manager",
+      "clerkUserId": "xxx",
+      "email": "manager@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Receptionist",
+      "password": "123456",
+      "role": "receptionist",
+      "clerkUserId": "yyy",
+      "email": "receptionist@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Mechanic Ravi",
+      "password": "123456",
+      "role": "mechanic",
+      "clerkUserId": "zzz",
+      "email": "mechanic@gmail.com"
+    }
+  ],
+
+  "customers": [
+    {
+      "id": 1,
+      "name": "Arun",
+      "phone": "9876543210",
+      "address": "Salem"
+    },
+    {
+      "id": 2,
+      "name": "Kumar",
+      "phone": "9123456789",
+      "address": "Chennai"
+    }
+  ],
+
+  "vehicles": [
+    {
+      "id": 1,
+      "customerId": 1,
+      "vehicleNumber": "TN-54-AB-1234",
+      "vehicleType": "Bike",
+      "model": "Honda Activa"
+    },
+    {
+      "id": 2,
+      "customerId": 2,
+      "vehicleNumber": "TN-10-XY-5678",
+      "vehicleType": "Car",
+      "model": "Hyundai i20"
+    }
+  ],
+
+  "jobCards": [
+    {
+      "id": 1,
+      "customerId": 1,
+      "vehicleId": 1,
+      "issue": "Engine noise",
+      "status": "Pending",
+      "assignedMechanicId": 4,
+      "date": "2026-03-25"
+    },
+    {
+      "id": 2,
+      "customerId": 2,
+      "vehicleId": 2,
+      "issue": "Oil change",
+      "status": "In Progress",
+      "assignedMechanicId": 4,
+      "date": "2026-03-25"
+    }
+  ],
+
+  "services": [
+    {
+      "id": 1,
+      "jobCardId": 1,
+      "description": "Engine repair",
+      "cost": 1500
+    },
+    {
+      "id": 2,
+      "jobCardId": 2,
+      "description": "Oil change",
+      "cost": 500
+    }
+  ],
+
+  "spareParts": [
+    {
+      "id": 1,
+      "name": "Oil Filter",
+      "price": 200,
+      "stock": 20
+    },
+    {
+      "id": 2,
+      "name": "Brake Cable",
+      "price": 150,
+      "stock": 5
+    }
+  ],
+
+  "invoices": [
+    {
+      "id": 1,
+      "jobCardId": 1,
+      "totalAmount": 1700,
+      "paymentStatus": "Pending",
+      "date": "2026-03-25"
+    },
+    {
+      "id": 2,
+      "jobCardId": 2,
+      "totalAmount": 700,
+      "paymentStatus": "Paid",
+      "date": "2026-03-25"
+    }
+  ]
+}
